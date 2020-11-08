@@ -13,3 +13,4 @@ if __name__ == '__main__':
 
     cross_entropy = -tf.reduce_mean(y*tf.log(tf.clip_by_value(y_, 1e-10, 1.0)))
     train_step = tf.train.AdamOptimizer(0.001).minimize(cross_entropy)
+    # print(1)
